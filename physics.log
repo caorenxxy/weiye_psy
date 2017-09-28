@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/W32TeX) (preloaded format=xelatex 2017.9.26)  28 SEP 2017 14:29
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/W32TeX) (preloaded format=xelatex 2017.9.26)  28 SEP 2017 15:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1323,7 +1323,12 @@ File: ./figure/fig1.eps Graphic file (type eps)
 
 ]
 File: ./figure/fig2.eps Graphic file (type eps)
- <./figure/fig2.eps> [2] [3] (./physics.aux) ) 
+ <./figure/fig2.eps>
+Underfull \hbox (badness 10000) in paragraph at lines 77--78
+
+ []
+
+[2] [3] (./physics.aux) ) 
 Here is how much of TeX's memory you used:
  19392 strings out of 493005
  400124 string characters out of 6137956
