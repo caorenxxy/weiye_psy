@@ -5,6 +5,7 @@
 \geometry{left = 2.5cm, right = 2.5cm, top = 2cm, bottom = 2cm}
 
 \newcommand{\bol}[1]{\textbf{#1}}
+\newcommand{\diff}{\mathrm{d}}
 
 \title{刘维烨专用资料}
 \author{Xiaoyu Xue}
@@ -18,6 +19,7 @@
 	\item 求和： $\displaystyle \sum_{i = 0} ^ n a_i = a_0 + \ldots + a_n$
 	\item 坐标: 三维坐标用$(x,y,z)$表示
 	\item 向量: $\vec{a}$或者$\bol{a}$，三维向量$\bol{a} = (x,y,z)$
+	\item 有限元差分: 用$\Delta x$来表示两个物理量$x1,~x2$的变化量
 \end{enumerate}
 \subsection{向量}
 \subsubsection{向量的长度}
@@ -67,6 +69,39 @@ x_2 & y_2 & z_2
 \end{figure}
 
 \section{位移、速度和加速度}
+\subsection{位移}
+定义：由初位置到末位置的一段有向线段（向量）\\
+假设点A的位置为$\bol{a} = (x_1, y_1, z_1)$，点B的位置为$\bol{b} = (x_2, y_2, z_2)$，A到B的位移为$\bol{x} = \bol{b} - \bol{a} = (x_2 - x_1 , y_2 - y_1, z_2 - z_1)$
+\subsection{速度}
+定义：一个物体的速度定义成在某个参考系下它的位置的变换率，是一个随时间变化的函数，可以用$\bol{v}(t)$表示
+\subsubsection{平均速度(Average velocity)}
+\begin{displaymath}
+	\bar{\bol{v}} = \frac{\Delta \bol{x}}{\Delta t}
+\end{displaymath}
+其中$\Delta \bol{x}$表示位移，$\Delta t$表示经历的时间
+\subsubsection{瞬时速度(Instantaneous velocity)}
+\begin{displaymath}
+	\bol{v} = \lim_{\Delta t \to 0}\frac{\Delta \bol{x}}{\Delta t} = \frac{\diff\bol{x}}{\diff t}
+\end{displaymath}
+因此位移可以通过瞬时速度的积分求得
+\begin{displaymath}
+\bol{x} = \int\bol{v}\diff t
+\end{displaymath}
+\subsection{加速度}
+定义：加速度为速度随时间的变化率（向量），是一个时间的函数，用$\bol{a}(t)$表示
+\subsubsection{平均加速度(Average acceleration)}
+\begin{displaymath}
+	\bar{\bol{a}} = \frac{\Delta \bol{v}}{\Delta t}
+\end{displaymath}
+其中$\Delta \bol{v}$为速度差，$\Delta t$为经历的时间
+\subsubsection{瞬时加速度(Instantaneous acceleration)}
+\begin{displaymath}
+	\bol{a} = \lim_{\Delta t \to 0} \frac{\Delta \bol{v}}{\Delta t} = \frac{\diff \bol{v}}{\diff t}
+\end{displaymath}
+可以看出瞬时加速度是速度随时间的导数，速度优势位移随时间的导数，所以加速度是位移随时间的二阶导数
+\begin{displaymath}
+	\bol{a} = \frac{\diff \bol{v}}{\diff t} = \frac{\diff^2 \bol{x}}{\diff t^2}
+\end{displaymath}
 \section{受力分析}
 \section{牛顿运动定律}
 \section{圆周运动}
