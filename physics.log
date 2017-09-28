@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/W32TeX) (preloaded format=xelatex 2017.9.26)  28 SEP 2017 14:09
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/W32TeX) (preloaded format=xelatex 2017.9.26)  28 SEP 2017 14:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -8,8 +8,8 @@ LaTeX2e <2017-04-15>
 Babel <3.10> and hyphenation patterns for 84 language(s) loaded.
 (c:/texlive/2017/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
-(c:/texlive/2017/texmf-dist/tex/latex/base/size12.clo
-File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+(c:/texlive/2017/texmf-dist/tex/latex/base/size11.clo
+File: size11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
 \c@section=\count80
@@ -1295,12 +1295,12 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 * \topmargin=-52.36449pt
 * \headheight=12.0pt
 * \headsep=25.0pt
-* \topskip=12.0pt
+* \topskip=11.0pt
 * \footskip=30.0pt
-* \marginparwidth=35.0pt
+* \marginparwidth=50.0pt
 * \marginparsep=10.0pt
 * \columnsep=10.0pt
-* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
@@ -1311,15 +1311,13 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <14.4> on input line 15.
+(Font)              <12> on input line 15.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 15.
+(Font)              <8> on input line 15.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 19.
+(Font)              <6> on input line 15.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 19.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 19.
+(Font)              <10.95> on input line 19.
 File: ./figure/fig1.eps Graphic file (type eps)
 <./figure/fig1.eps> [1
 
@@ -1327,11 +1325,11 @@ File: ./figure/fig1.eps Graphic file (type eps)
 File: ./figure/fig2.eps Graphic file (type eps)
  <./figure/fig2.eps> [2] [3] (./physics.aux) ) 
 Here is how much of TeX's memory you used:
- 19394 strings out of 493005
- 400017 string characters out of 6137956
- 423706 words of memory out of 5000000
- 23217 multiletter control sequences out of 15000+600000
- 7579 words of font info for 50 fonts, out of 8000000 for 9000
+ 19392 strings out of 493005
+ 400124 string characters out of 6137956
+ 423702 words of memory out of 5000000
+ 23215 multiletter control sequences out of 15000+600000
+ 7574 words of font info for 49 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  57i,8n,68p,10436b,298s stack positions out of 5000i,500n,10000p,200000b,80000s
 
