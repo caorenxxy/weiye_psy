@@ -1,7 +1,8 @@
 \documentclass[a4paper,oneside,12pt]{article}
 \usepackage{ctex}
+\usepackage{graphicx}
 \usepackage{geometry}
-\geometry{left = 2.5cm, right = 2.5cm, top = 2.5cm, bottom = 2.5cm}
+\geometry{left = 2.5cm, right = 2.5cm, top = 2cm, bottom = 2cm}
 
 \newcommand{\bol}[1]{\textbf{#1}}
 
@@ -15,6 +16,7 @@
 \subsection{数学符号}
 \begin{enumerate}
 	\item 求和： $\displaystyle \sum_{i = 0} ^ n a_i = a_0 + \ldots + a_n$
+	\item 坐标: 三维坐标用$(x,y,z)$表示
 	\item 向量: $\vec{a}$或者$\bol{a}$，三维向量$\bol{a} = (x,y,z)$
 \end{enumerate}
 \subsection{向量}
@@ -28,14 +30,42 @@ $\bol{a} = (x_1, y_1, z_1)$，$\bol{b} = (x_2, y_2, z_2)$，三角形或者平�
 \begin{displaymath}
 \bol{a} + \bol{b} = (x_1 + x_2, y_1 + y_2, z_1 + z_2)
 \end{displaymath}
-\subsubsection{向量内积}
+\vspace{-10mm}
+\begin{figure}
+\centering
+\includegraphics[scale=0.4]{./figure/fig1.eps}
+\end{figure}
+\subsubsection{向量数乘}
+一个数乘一个向量的结果是一个向量
+\begin{displaymath}
+c\bol{a} = c(x, y, z) = (cx, cy, cz)
+\end{displaymath}
+\subsubsection{向量点乘}
+向量点乘的结果是一个标量：
 \begin{displaymath}
 \bol{a} \cdot \bol{b} = \vert \bol{a}\vert \vert\bol{b}\vert \cos\theta =x_1x_2 + y_1y_2 + z_1z_2
 \end{displaymath}
-\subsubsection{向量外积}
+\subsubsection{向量叉乘}
+向量叉乘的结果是一个向量，长度为
 \begin{displaymath}
-\bol{a}\times\bol{b} = \vert\bol{a}\vert \vert\bol{b}\vert \sin\theta
+\vert\bol{a}\times\bol{b}\vert = \vert\bol{a}\vert \vert\bol{b}\vert \sin\theta
 \end{displaymath}
+\par 向量为:
+\begin{displaymath}
+\bol{a}\times\bol{b} = \left\vert
+\begin{array}{ccc}
+\bol{i} & \bol{j} & \bol{k}\\
+x_1 & y_1 & z_1\\
+x_2 & y_2 & z_2
+\end{array}
+\right\vert = \left(y_1z_2 - y_2z_1 , x_2z_1 - x_1z_2 , x_1y_2  - x_2y_1\right)
+\end{displaymath}
+\par 向量的方向根据坐标系选择左右手法则（不满足交换律）
+\begin{figure}[!h]
+\centering
+\includegraphics[scale=0.3]{./figure/fig2.eps}
+\end{figure}
+
 \section{位移、速度和加速度}
 \section{受力分析}
 \section{牛顿运动定律}
