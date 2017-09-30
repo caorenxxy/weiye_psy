@@ -1,5 +1,6 @@
 \documentclass[a4paper,oneside,11pt]{article}
 \usepackage{ctex}
+\usepackage{amsmath}
 \usepackage{graphicx}
 \usepackage{geometry}
 \geometry{left = 2.5cm, right = 2.5cm, top = 2cm, bottom = 2cm}
@@ -20,6 +21,7 @@
 	\item 坐标: 三维坐标用$(x,y,z)$表示
 	\item 向量: $\vec{a}$或者$\bol{a}$，三维向量$\bol{a} = (x,y,z)$
 	\item 有限元差分: 用$\Delta x$来表示两个物理量$x1,~x2$的变化量
+	\item 导数: $f(x)$的导数为$\displaystyle f'(x) = \displaystyle\frac{\diff f(x)}{\diff x} = \displaystyle\lim_{h \to 0}\frac{f(x + h) - f(x)}{h}$
 \end{enumerate}
 \subsection{向量}
 \subsubsection{向量的长度}
@@ -28,14 +30,15 @@ $\bol{a} = (x_1, y_1, z_1)$，向量$\bol{a}$的长度为
 \vert \bol{a} \vert = \sqrt{x_1^2 + y_1^2 + z_1^2}
 \end{displaymath}
 \subsubsection{向量加法}
-$\bol{a} = (x_1, y_1, z_1)$，$\bol{b} = (x_2, y_2, z_2)$，三角形或者平行四边形准则
+$\bol{a} = (x_1, y_1, z_1)$，$\bol{b} = (x_2, y_2, z_2)$，三角形或者平行四边形法则，如图\ref{fig1}
 \begin{displaymath}
 \bol{a} + \bol{b} = (x_1 + x_2, y_1 + y_2, z_1 + z_2)
 \end{displaymath}
-\vspace{-10mm}
+\vspace{-8mm}
 \begin{figure}[!h]
 \centering
 \includegraphics[scale=0.4]{./figure/fig1.eps}
+\caption{\label{fig1}平行四边形法则}
 \end{figure}
 \subsubsection{向量数乘}
 一个数乘一个向量的结果是一个向量
@@ -62,10 +65,11 @@ x_2 & y_2 & z_2
 \end{array}
 \right\vert = \left(y_1z_2 - y_2z_1 , x_2z_1 - x_1z_2 , x_1y_2  - x_2y_1\right)
 \end{displaymath}
-\par 向量的方向根据坐标系选择左右手法则（不满足交换律）
+\par 向量的方向根据坐标系选择左右手法则（不满足交换律），如图\ref{fig2}
 \begin{figure}[!h]
 \centering
 \includegraphics[scale=0.3]{./figure/fig2.eps}
+\caption{\label{fig2}向量叉乘}
 \end{figure}
 \newpage
 \section{位移、速度和加速度}
@@ -110,6 +114,7 @@ x_2 & y_2 & z_2
 \begin{figure}[!h]
 \centering
 \includegraphics[scale=0.25]{./figure/fig3.eps}
+\caption{\label{fig3}受力分析}
 \end{figure}
 \subsection{力的种类}
 \subsubsection{重力}
@@ -154,6 +159,27 @@ F = \mu F_N
 其中$\bol{F}_{AB}$是物体B施加于物体A的力，$\bol{F}_{BA}$是物体A施加于物体B的力。
 \newpage
 \section{圆周运动}
+
+\subsection{角速度}
+定义: 在物理学中定义为角位移的变化率，描述物体转动时，在单位时间内转过多少角度以及转动方向的向量，用符号
+$\boldsymbol{\omega}$表示，单位： 弧度每秒($rad/s$)
+\par 与速度的关系： 在半径为$\bol{r}$的圆上，角速度与速度的关系是$\boldsymbol{\omega} = \bol{r}\times\bol{v}/\vert\bol{r}\vert^2$，它们的大小关系为$\omega = v\sin \theta/r$
+\subsection{匀速圆周运动}
+匀速圆周运动中，物体的角速度恒定，速度的大小也恒定，所以有关系$v = \omega r$
+\subsubsection{向心力}
+定义： 当物体沿着圆周或者曲线轨道运动时，指向圆心（曲率中心）的合外力作用力
+\par 在匀速圆周运动中，向心力的大小为:
+\begin{displaymath}
+	F = m\omega^2r = m\frac{v^2}{r} = ma
+\end{displaymath}
+\subsection{非匀速圆周运动}
+非匀速圆周运动的加速度可以分成法向加速度$\bol{a}_\perp$和切向加速度$\bol{a}_\parallel$，对于已知速度大小为$v(t)$，半径为$r$的圆周运动:
+\begin{displaymath}
+	\left\vert a_\perp\right\vert = \frac{v^2}{r}
+\end{displaymath}
+\begin{displaymath}
+	\left\vert a_\parallel \right\vert = \frac{\diff v(t)}{\diff t}
+\end{displaymath}
 \section{Try your best !}
 \begin{figure}[!h]
 \centering
