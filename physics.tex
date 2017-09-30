@@ -180,6 +180,82 @@ $\boldsymbol{\omega}$表示，单位： 弧度每秒($rad/s$)
 \begin{displaymath}
 	\left\vert a_\parallel \right\vert = \frac{\diff v(t)}{\diff t}
 \end{displaymath}
+总加速度$\bol{a}$：
+\begin{displaymath}
+	\bol{a} = \bol{a}_\perp + \bol{a}_\parallel
+\end{displaymath}
+\begin{displaymath}
+	\vert a\vert = \sqrt{\left\vert a_\perp\right\vert^2 + \left\vert a_\parallel\right\vert^2}
+\end{displaymath}
+\newpage
+\section{动力学}
+\subsection{动量}
+定义： 动量定义为质量和速度的乘积，是一个向量用$\bol{p}$表示
+\begin{displaymath}
+	\bol{p} = m\bol{v}
+\end{displaymath}
+\subsubsection{冲量}
+冲量是作用在物体上的力在时间上的累积，用符号$\bol{I}$表示：
+\begin{displaymath}
+	\bol{I} = \int\bol{F}\diff t
+\end{displaymath}
+\subsubsection{动量定理}
+动量定理：一个物体的冲量为动量的变化量
+\begin{displaymath}
+	\bol{F}\Delta t = m\Delta\bol{v}
+\end{displaymath}
+\subsection{角动量}
+\subsubsection{角加速度}
+定义： 描述角速度的变化率，也是一个向量，用符号$\boldsymbol{\alpha}$表示，单位：$rad/s^2$
+\begin{displaymath}
+	\boldsymbol{\alpha} = \lim_{\Delta t \to 0}\frac{\diff\boldsymbol{\omega}}{\Delta t} = 
+	\frac{\diff \boldsymbol{\omega}}{\diff t}
+\end{displaymath}
+\subsubsection{转动惯量}
+转动惯量是一个物体对于其旋转运动的惯性大小的量度。用符号$I$表示
+\par 对于一个质点
+\begin{displaymath}
+	I = mr^2
+\end{displaymath}
+$I = mr^2$，
+其中$m$为质量，$r$是质点和转轴的垂直距离
+\par 对于刚体有
+\begin{displaymath}
+	I = \int_Q r^2\diff m
+\end{displaymath}
+\subsubsection{角动量}
+定义： 角动量定义为转动惯量和角速度的乘积，用符号$\bol{L}$表示
+\begin{displaymath}
+	\bol{L} = I\boldsymbol{\omega}
+\end{displaymath}
+\subsubsection{力矩}
+通常来说，一个力矩作用在一个质点上可以表达为：
+\begin{displaymath}
+	\boldsymbol{\tau} = \bol{r}\times\bol{F}
+\end{displaymath}
+其中$\bol{r}$是质点的位置向量，$\bol{F}$为作用在质点上的力
+\par 运用牛顿第二定律可以得到力矩类似于力的表达式
+\begin{displaymath}
+	\boldsymbol{\tau} = \frac{\diff \bol{L}}{\diff t} = \frac{\diff (I\boldsymbol{\omega})}{\diff t} = I\boldsymbol{\alpha}
+\end{displaymath}
+\subsection{动能与角动能}
+动能：
+\begin{displaymath}
+	E_k = \frac{1}{2}mv^2
+\end{displaymath}
+角动能：
+\begin{displaymath}
+	E_r = \frac{1}{2}I\omega^2
+\end{displaymath}
+\subsubsection{如何记忆}
+\begin{enumerate}
+	\item 转动惯量$I$类比于质量$m$
+	\item 角速度$\boldsymbol{\omega}$类比于速度$\bol{v}$
+	\item 角加速度$\boldsymbol{\omega}$类比于加速度$\bol{a}$
+	\item 力矩$\boldsymbol{\tau}$类比于力$\bol{F}$
+	\item 角动量$\bol{L}$类比于动量$\bol{p}$
+	\item 牛顿第二定律，动量定理，动能定理两边同样适用
+\end{enumerate}
 \section{Try your best !}
 \begin{figure}[!h]
 \centering
